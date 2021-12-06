@@ -1,0 +1,13 @@
+/* for header */
+.icon{
+    font-size: 25px;
+}
+.border1{
+    border: #dbdbdb 1px solid;
+}
+.text{
+    text-align: justify;
+}
+.sidebar{
+    z-index: 1000;
+}
