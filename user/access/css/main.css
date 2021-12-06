@@ -11,3 +11,7 @@
 .sidebar{
     z-index: 1000;
 }
+.input{
+    outline: none;
+    border: none
+}
