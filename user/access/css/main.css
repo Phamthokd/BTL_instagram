@@ -15,3 +15,25 @@
     outline: none;
     border: none
 }
+.content_icon .fas 
+{
+    color:#ed4956;
+}
+
+/* for header */
+.header_search{
+    left: -30%;
+    right: 0;
+    top: 150% ;
+    width: 375px;
+    height: 375px;
+    
+}
+.header_search .row:hover{
+    background-color:#ccc;
+}
+.header_search_close{
+    right: 5%;
+    top: 30%;
+    z-index: 5;
+}
