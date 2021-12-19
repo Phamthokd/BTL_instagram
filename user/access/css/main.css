@@ -37,3 +37,16 @@
     top: 30%;
     z-index: 5;
 }
+
+.mod_header{
+    z-index: 10;
+    width: 600px;
+    border-radius: 0;
+}
+.mod_footer{
+    z-index: 10;
+    width: 600px;
+    border-radius: 0;
+    bottom: 35px;
+    height: 165px;
+}
