@@ -50,3 +50,17 @@
     bottom: 35px;
     height: 165px;
 }
+
+.message {
+    font: 20px Helvetica, Arial, Sans-serif;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+}
+.error {
+    background: red;
+}
+.success {
+    background: green;
+}

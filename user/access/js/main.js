@@ -1,6 +1,26 @@
 $(document).ready(function(){
     $(".sidebar_follow").click(function(){
-        $(this).text("Đang theo dõi")    
+      val = $(this).text()    
+      if(val == 'Theo dõi'){
+        $(this).text("Đang theo dõi")  
+      }
+      //click hủy theo dỏi
+      else{
+        //show modal hủy
+        $('#exampleModal1').modal('show',function(){
+          
+        })
+        //click nút hủy
+        $(document).on('click','#huy',function(){
+          $('#exampleModal1').modal('hide')
+        })
+        // click nút theo dõi
+        $(document).on('click','#huy_follow',function(){
+          $('#theodoi1').text('Theo dõi')
+          $('#exampleModal1').modal('hide')
+        })
+
+      }  
     })
     $(".content_add").click(function(){
         $(this).text("elit.Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat illo rem id nisi consequatur esse, sint perspiciatis soluta porro?")
@@ -147,6 +167,6 @@ $(document).ready(function(){
         
       </div>`)
     //   $(this).addClass("d-none")
-    })
-
+    })  
+    
 })
