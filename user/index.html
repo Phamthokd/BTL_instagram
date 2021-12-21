@@ -37,15 +37,18 @@
               type="text"
               class="form-control rounded header_search_input"
               placeholder="Search"
+              id="header_search_input"
+              autocomplete="off"
             />
-            <i
-              class="fas fa-times header_search_close position-absolute d-none"
+            <i id="header_search_icon"
+              onclick="search()"
+              class="fas fa-search header_search_icon position-absolute d-none"
             ></i>
             <div
-              class="header_search position-absolute bg-white rounded-2 d-none"
+              class="header_search position-absolute bg-white rounded-2 d-none" style="overflow: scroll;"
             >
               <h6 class="ms-4 mt-3">Gần đây</h6>
-              <div class="header_search_content">
+              <div class="header_search_content" id="results_search">
                 <div class="row mb-2 m-0">
                   <div class="col-3">
                     <a class="navbar-brand" href="#">
@@ -233,12 +236,13 @@
               <p class="text px-2 m-0">
                 <strong>Sontungmtp:</strong> Lorem, ipsum dolor sit amet
                 consectetur adipisicing
-                <span class="content_add">...<b>thêm</b></span>
+                <span class="content_add">...<b role="button">thêm</b></span>
               </p>
               <p
                 class="px-2 text-black-50 m-0"
                 data-mdb-toggle="modal"
                 data-mdb-target="#exampleModal"
+                style="cursor: pointer;"
               >
                 Xem tất cả bình luận
               </p>
@@ -256,16 +260,16 @@
                   <div class="modal-content">
                     <div class="modal-body">
                       <div class="container-fluid">
-                        <div class="row" style="height: 600px; overflow: auto">
+                        <div class="row" style="height: 600px; overflow: scroll; position: relative;">
                           <div class="col-5">
-                            <div class="position-relative">
+                            
                               <img
                               src="./access/img/user7.jpg"
                               alt=""
-                              class="img-fluid position-fixed top-0"
-                              style="z-index: 10;"
+                              class="img-fluid"
+                              style="position:fixed;width: 25%;height: 75%;"
                             />
-                            </div>
+                            
                            
                           </div>
                           <div class="col-7 position-relative p-0">
@@ -532,6 +536,7 @@
                                 d-flex
                                 flex-column
                               "
+                              style="bottom: 7%;"
                             >
                               <div class="d-flex content_icon">
                                 <i
@@ -821,7 +826,7 @@
                     text-info
                   "
                 >
-                  <small>Chuyển</small>
+                  <small role="button">Chuyển</small>
                 </div>
               </div>
               <h6 class="pt-4">Gợi ý cho bạn</h6>
@@ -880,7 +885,7 @@
                     text-info
                   "
                 >
-                  <small class="sidebar_follow" id="theodoi1">Theo dõi</small>
+                  <small class="sidebar_follow" id="theodoi1" role="button">Theo dõi</small>
                 </div>
               </div>
               <div class="row mb-2">
@@ -909,7 +914,7 @@
                     text-info
                   "
                 >
-                  <small class="sidebar_follow" id="theodoi1">Theo dõi</small>
+                  <small class="sidebar_follow" id="theodoi1" role="button">Theo dõi</small>
                 </div>
               </div>
               <div class="row mb-2">
@@ -938,7 +943,7 @@
                     text-info
                   "
                 >
-                  <small class="sidebar_follow">Theo dõi</small>
+                  <small class="sidebar_follow" role="button">Theo dõi</small>
                 </div>
               </div>
               <div class="row mb-2">
@@ -967,7 +972,7 @@
                     text-info
                   "
                 >
-                  <small class="sidebar_follow">Theo dõi</small>
+                  <small class="sidebar_follow role="button"">Theo dõi</small>
                 </div>
               </div>
               <div class="row">
@@ -1026,11 +1031,11 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Bỏ theo dõi</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
+            <img src="./access/img/user5.jpg" alt="" class="img-fluid">
           </div>
           <div class="modal-footer">
             <button id="huy" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
