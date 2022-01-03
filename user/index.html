@@ -125,7 +125,7 @@
         <div class="col-5 justify-content-end d-flex">
           <a href="" class="icon p-2"><i class="fas fa-home"></i></a>
           <a href="" class="icon p-2"><i class="fab fa-facebook-messenger"></i></a>
-          <a href="" class="icon p-2"><i class="far fa-plus-square"></i></a>
+          <a href="#" class="icon p-2"><i class="far fa-plus-square"></i></a>
           <a href="" class="icon p-2"><i class="far fa-compass"></i></a>
           <a href="" class="icon p-2"><i class="far fa-heart"></i></a>
 
@@ -188,7 +188,10 @@
     <div class="container mt-5 pt-5">
       <div class="row">
         <!-- for content -->
-        <div class="col-md-8 col-12">
+        <div class="col-md-8 col-12 " >
+          <div class="" id="result_share">
+
+          </div>
           <figure class="figure border1">
             <!-- Image and text -->
             <nav class="d-flex align-items-center pt-2">
@@ -426,7 +429,7 @@
                                   </div>
                                   
                                 </div>
-                                <div class="" id="resuld_comment" >
+                                <div class="" id="" >
                                   <div class="d-flex">
                                     <img
                                       src="./access/img/user9.jpg"
@@ -521,6 +524,7 @@
                                     </div>
                                   </div>
                                 </div>
+                                <div class="" id="resuld_comment" ></div>
                               </div>
                               
                               <i class="fas fa-plus-circle d-flex justify-content-center btn_add_comment "></i>
@@ -1042,6 +1046,71 @@
           <div class="modal-footer">
             <button id="huy" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
             <button id="huy_follow" type="button" class="btn btn-primary">Hủy theo dõi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal tạo bài viết -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tạo Bài viết</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6 me-auto">
+                  <img src="./access/img/user6.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 ms-auto d-flex flex-column justify-content-start">
+                  <div class="d-flex">
+                    <a class="navbar-brand" href="#">
+                      <img
+                        src="./access/img/user.jpg"
+                        style="border-radius: 40px"
+                        class="ms-3"
+                        height="40"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </a>
+                    <div class="d-flex mt-2">
+                      <a href=""><strong>Tho_KD</strong></a>
+                    </div>
+                  </div>
+                  <div class="form-outline">
+                    <textarea class="form-control content_share" id="textAreaExample" rows="8" placeholder="Thêm chú thích ..." autocomplete="off"></textarea> 
+                  </div>
+                  <div class="mt-2">
+                    <i class="far fa-smile icon"></i>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p>Thêm vị trí</p>
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+              Hủy
+            </button>
+            <button type="button" class="btn btn-primary btn_share" >Chia sẻ</button>
           </div>
         </div>
       </div>
