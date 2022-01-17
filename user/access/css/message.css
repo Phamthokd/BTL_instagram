@@ -1,0 +1,27 @@
+.icon{
+    font-size: 25px;
+}
+.message_box{
+    
+    border-color: #dbdbdb;
+    border-radius: 4px;
+    /* border-style: solid; */
+    border-width: 1px;
+    color: #262626;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 18px;
+    
+}
+button{
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
