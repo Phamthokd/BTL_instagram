@@ -501,6 +501,7 @@ $(document).ready(function () {
     // Hien thi lai DANH SACH
     // console.log(search_Obj)
     show_content_share();
+    $("#exampleModal2").modal("hide");
     }
   })
 
